@@ -12,7 +12,7 @@ public class TestJbdc {
 		String pass = "hbstudent";
 		try {
 			System.out.println("Connecting to database: " + jbdcUrl);
-			Connection mycConn = DriverManager.getConnection(jbdcUrl, user, pass);
+			Connection myConn = DriverManager.getConnection(jbdcUrl, user, pass);
 			System.out.println("Connection successful!");
 		} catch (Exception exc) {
 			exc.printStackTrace();
