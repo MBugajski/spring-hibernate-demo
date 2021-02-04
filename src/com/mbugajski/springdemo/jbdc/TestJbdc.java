@@ -1,4 +1,4 @@
-package com.mbugajski.springdemo.hib;
+package com.mbugajski.springdemo.jbdc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
