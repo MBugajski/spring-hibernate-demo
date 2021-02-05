@@ -16,13 +16,10 @@ public class CreateStudentDemo {
 		Session session = factory.getCurrentSession();
 
 		try {
-			System.out.println("Creating a student object...");
 			Student tempStudent = new Student("Adam", "Smith", "adamsmith@gmail.com");
 			session.beginTransaction();
-			System.out.println("Saving student..." + tempStudent.toString());
 			session.save(tempStudent);
 			session.getTransaction().commit();
-			System.out.println("Done!");
 		} finally {
 			factory.close();
 		}

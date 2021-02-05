@@ -24,7 +24,6 @@ public class PrimaryKeyDemo {
 			session.save(tempStudent2);
 			session.save(tempStudent3);
 			session.getTransaction().commit();
-			System.out.println("Done!");
 		}
 		finally {
 			factory.close();
